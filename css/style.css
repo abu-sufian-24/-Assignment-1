@@ -234,6 +234,8 @@ a {
 .opinion-table {
   width: 100%;
   overflow: hidden;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .opinion-table thead {
@@ -246,15 +248,15 @@ a {
   text-align: left;
   padding: 24px;
   font-size: 20px;
-  width: 500;
+  font-weight: 500;
 }
 
 .opinion-table td {
-  padding: 15px;
-  font-size: 0.9em;
-  color: #555;
-  border: 1px solid rgba(14, 14, 14, 0.15);
-  gap: 0;
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0e0e0e;
+  border: 2px solid rgba(14, 14, 14, 0.15);
 }
 
 /* .opinion-table tbody tr:hover {
@@ -263,9 +265,154 @@ a {
 
 select {
   padding: 10px;
-  font-size: 0.9em;
-  border: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #0e0e0e;
   border-radius: 5px;
+  color: #0e0e0e;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #c6e4d6;
+}
+
+select:focus {
+  border-color: #1f9e3b;
+  outline: none;
+  box-shadow: 0 0 5px rgba(31, 158, 59, 0.5);
+}
+
+/* recent-news-section start */
+.recent-news-section {
+  margin-top: 80px;
+}
+.second-section {
+  margin-top: 24px;
+}
+.recent-news-section .container h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #0e0e0e;
+}
+.recent-news-section .container p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(14, 14, 14, 0.7);
+  margin-top: 24px;
+  line-height: 24px;
+}
+
+/* News Section */
+.news {
+  padding: 48px;
+  background-color: #ffffff;
+  margin-top: 24px;
+  border-radius: 24px;
+}
+
+.news-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.news-image img {
+  width: 408px;
+  border-radius: 24px;
+}
+
+.news-text h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: rgba(14, 14, 14, 0.8);
+}
+
+.al-jazera img {
+  width: 134px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+.time span {
+  color: (14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.news-text p {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  padding: 13px 26px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background-color: #006a50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* donation-section */
+.donation-section {
+  margin-top: 80px;
+}
+.donation-section .container h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #0e0e0e;
+}
+.donation-section .container p {
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+.donation-section .donate-container {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.donation-section .container .donate {
+  width: 240px;
+  padding: 40px;
+  background-color: #ffffff;
+  margin-top: 32px;
+  border-radius: 16px;
+  height: 128px;
+}
+.donation-section .container .second {
+  width: 252px;
+  background-color: #c6e4d6;
+}
+.donation-section .container .trd {
+  width: 253px;
+}
+.donation-section .container .forth {
+  width: 264px;
+}
+.donation-section .container .donate h4 {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgba(14, 14, 14, 0.8);
+}
+.input-file {
+  margin-top: 32px;
+}
+
+.input-file .input-box {
+  display: block;
+  width: 1032px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border: none;
+}
+
+.input-box:focus {
+  outline: none;
 }
